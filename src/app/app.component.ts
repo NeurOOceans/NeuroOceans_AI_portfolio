@@ -14,7 +14,7 @@ import * as AOS from 'aos';
 export class AppComponent {
   title = 'Arooj Saghar | Frontend Developer';
   fileURL = 'https://docdro.id/4eyDWUi';
-  imgPath = "assets/images/portfolio/Logo2.png";
+  // imgPath = "assets/images/portfolio/Logo.jpg";
   contactform : FormGroup;
   isSubmit = true;
   submitMessage = '';
@@ -82,7 +82,7 @@ export class AppComponent {
       setTimeout(() => {
         this.isSubmit = false
       }, 5000);
-  } 
+  }
 
   togglemenu() {
     $(".sidemenu").addClass("active");
@@ -92,17 +92,17 @@ export class AppComponent {
   }
 
   onSubmit() {
-    
+
   }
   // (scroll)="onWindowScroll()"
   @HostListener('window:scroll', ['$event'])
   onWindowScroll() {
     if (window.pageYOffset > 100) {
       $(".header_row").addClass("sticky");
-      this.imgPath = "assets/images/portfolio/Logo3.png";
+      // this.imgPath = "assets/images/portfolio/Logo3.png";
     } else {
       $(".header_row").removeClass("sticky");
-      this.imgPath = "assets/images/portfolio/Logo2.png";
+      // this.imgPath = "assets/images/portfolio/Logo2.png";
     }
   }
 
