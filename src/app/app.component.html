@@ -1,0 +1,678 @@
+<div class="body" style="overflow-x: hidden">
+  <header class="header" (scroll)="onWindowScroll()">
+    <div class="row header_row">
+      <div class="col-md-2">
+        <h3 class="logo">
+          <!-- Frontend -->
+          <img [src]="imgPath" alt="LOGO" />
+        </h3>
+      </div>
+      <div class="col-md-8">
+        <nav class="menu">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experiences">Experiences</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-md-2">
+        <a
+          href="javascript:void(0);"
+          class="sidemenu_toggler"
+          (click)="togglemenu()"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="sidemenu">
+      <a href="javascript:void(0);" class="close" (click)="closemenu()"></a>
+      <nav>
+        <ul>
+          <li>
+            <a href="#home" (click)="closemenu()" data-text="Home">Home</a>
+          </li>
+          <li>
+            <a href="#about" (click)="closemenu()" data-text="About">About</a>
+          </li>
+          <li>
+            <a href="#services" (click)="closemenu()" data-text="Services"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a href="#skills" (click)="closemenu()" data-text="Skills"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a href="#experiences" (click)="closemenu()" data-text="Experiences"
+              >Experiences</a
+            >
+          </li>
+          <li>
+            <a href="#gallery" (click)="closemenu()" data-text="Gallery"
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a href="#contact" (click)="closemenu()" data-text="Contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <footer>
+        <div class="social-icons d-flex">
+          <!-- <li><i class="fa fa-facebook"></i></li> -->
+          <li>
+            <a class="linkedin" href="https://www.linkedin.com/in/arooj-saghar/"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a class="github" href="https://github.com/aRooj-saghaR"
+              ><i class="fa fa-github"></i
+            ></a>
+          </li>
+        </div>
+        <!-- <p>2020-2021,Designed by Arooj Saghar</p> -->
+      </footer>
+    </div>
+  </header>
+
+  <!------------Home starts------------->
+  <!-- .home{
+    background-image: url(./assets/images/portfolio/black_bg\ \(3\).jpg); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 500px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  } -->
+  <section class="home container" id="home">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="hero-text" data-aos="fade-right" data-aos-duration="2000">
+          <span class="title">Welcome To</span><br />
+          <span class="name">NeuroOceans AI</span><br />
+          <span class="designation">AI-based Software Company</span><br />
+          <span class="email"
+            ><i class="fa fa-envelope"></i>aroojsaghar648@gmail.com</span
+          ><br />
+          <span class="phone"><i class="fa fa-phone"></i>+92341-4742499</span
+          ><br />
+          <div class="social-icons d-flex">
+            <li>
+              <a
+                class="linkedin"
+                href="https://www.linkedin.com/in/arooj-saghar/"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a class="github" href="https://github.com/aRooj-saghaR"
+                ><i class="fa fa-github"></i
+              ></a>
+            </li>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="hero-img" data-aos="fade-up" data-aos-duration="2000">
+          <div class="img-border">
+            <img
+              src="assets/images/portfolio/Logo.jpg"
+              alt=""
+              class="img-fluid logo-img"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!------------About starts------------->
+
+  <section
+    class="about"
+    id="about"
+    data-aos="zoom-in-up"
+    data-aos-duration="2000"
+  >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 img">
+          <img src="assets/images/portfolio/home-main.svg" alt="" />
+        </div>
+        <div class="col-md-5 gap">
+          <h3>About me</h3>
+          <span class="hl"></span>
+          <p>
+            <!-- <br />
+                In my Web development journey, I work with companies around the globe as a freelance Web Developer. I've designed everything from small business sites to large scale eCommerce stores. -->
+            <br />
+            Welcome to NeuroOceans.AI, an AI-based software company that specializes in developing cutting-edge
+            solutions for businesses and organizations. Our team of experts leverages the latest advancements
+            in artificial intelligence, machine learning, and natural language processing to deliver innovative
+            products and services that help our clients stay ahead of the curve.
+            <br />
+            Whether you need to optimize your operations, gain valuable insights, or streamline your processes,
+            we have the tools and expertise to help you achieve your goals. Join us on our journey to unlock the
+            depths of intelligence and discover the endless possibilities that AI has to offer.
+          </p>
+          <div class="tag">
+            <ul>
+              <li><span>Html</span></li>
+              <li><span>Css</span></li>
+              <li><span>Bootstrap</span></li>
+              <li><span>Javascript</span></li>
+              <li><span>React</span></li>
+              <li><span>Redux</span></li>
+              <li><span>Angular</span></li>
+              <li><span>Node JS</span></li>
+              <li><span>Express JS</span></li>
+              <li><span>MongoDB</span></li>
+              <li><span>Wordpress</span></li>
+              <li><span>Php</span></li>
+            </ul>
+          </div>
+          <!-- <div class="download-button">
+            <a
+              [href]="fileURL"
+              target="_blank"
+              class="btn btn-danger"
+              download="Arooj Saghar.pdf"
+              >Download CV</a
+            >
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!------------Services starts------------->
+  <section class="services" id="services">
+    <div class="container" data-aos="fade-up-right" data-aos-duration="500">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h1>What I Do?</h1>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 text-center">
+          <div class="service-item">
+            <i class="fa fa-object-ungroup sky-color"></i>
+            <h3>Web Applications</h3>
+            <p>
+              I can design and develop Dashboards, Admin panels and web
+              applications for different purposes according to your requirements
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 text-center">
+          <div class="service-item">
+            <i class="fa fa-object-ungroup"></i>
+            <h3>Web Designing</h3>
+            <p>
+              I design professional, creative and responsive websites compatible
+              with all screen sizes
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 text-center">
+          <div class="service-item">
+            <i class="fa fa-code iron-color"></i>
+            <h3>E-Commerce</h3>
+            <p>
+              Increase your sales with fully functional and incredible online
+              store.I can create responsive E-commerce stores using wordpress
+              and woo-commerce
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="container" data-aos="fade-up-left" data-aos-duration="1000">
+      <div class="row">
+        <div class="col-sm-12 col-md-4 col-lg-4 text-center">
+          <div class="service-item">
+            <i class="fa fa-object-ungroup "></i>
+            <h3>Creative Design</h3>
+            <p>
+              I'll design attractive, animated and cool website designs by focusing to the important elements.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 text-center">
+          <div class="service-item">
+            <i class="fa fa-code "></i>
+            <h3>Responsive Design</h3>
+            <p>
+               I develop Mobile User Interface for our clients Intuitive, responsive, suitable for any type of screens.(iPhone, Android, iPad, Symbion). </p>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4 col-lg-4 text-center">
+          <div class="service-item">
+            <i class="fa fa-object-ungroup sky-color"></i>
+            <h3>Landing Pages</h3>
+            <p>
+              First Impression is the last impression, Why not work with me to create Landing pages that makes your customer buy your services.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </section>
+
+  <!------------Skills section starts------------->
+
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <div class="skills_inner">
+            <div
+              class="professional_skill"
+              data-aos="zoom-in-right"
+              data-aos-duration="2000"
+            >
+              <h3>Technical Skills</h3>
+              <div class="singal_skill">
+                <div class="candidatos">
+                  <div class="parcial">
+                    <div class="info">
+                      <div class="name">Html5/Css3</div>
+                      <div class="percentage">90%</div>
+                    </div>
+                    <div class="progressBar">
+                      <div class="percentagem" style="width: 90%"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="candidatos">
+                  <div class="parcial">
+                    <div class="info">
+                      <div class="name">Bootstrap</div>
+                      <div class="percentage">85%</div>
+                    </div>
+                    <div class="progressBar">
+                      <div class="percentagem" style="width: 85%"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="candidatos">
+                  <div class="parcial">
+                    <div class="info">
+                      <div class="name">Javascript</div>
+                      <div class="percentage">80%</div>
+                    </div>
+                    <div class="progressBar">
+                      <div class="percentagem" style="width: 80%"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="candidatos">
+                  <div class="parcial">
+                    <div class="info">
+                      <div class="name">React</div>
+                      <div class="percentage">80%</div>
+                    </div>
+                    <div class="progressBar">
+                      <div class="percentagem" style="width: 80%"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="candidatos">
+                  <div class="parcial">
+                    <div class="info">
+                      <div class="name">Redux</div>
+                      <div class="percentage">80%</div>
+                    </div>
+                    <div class="progressBar">
+                      <div class="percentagem" style="width: 80%"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="candidatos">
+                  <div class="parcial">
+                    <div class="info">
+                      <div class="name">Angular</div>
+                      <div class="percentage">75%</div>
+                    </div>
+                    <div class="progressBar">
+                      <div class="percentagem" style="width: 75%"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="candidatos">
+                  <div class="parcial">
+                    <div class="info">
+                      <div class="name">Mern</div>
+                      <div class="percentage">70%</div>
+                    </div>
+                    <div class="progressBar">
+                      <div class="percentagem" style="width: 70%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <div
+            class="professional_skills"
+            data-aos="zoom-in-left"
+            data-aos-duration="2000"
+          >
+            <h3>Professional Skills</h3>
+            <ul class="professional_progress">
+              <li>
+                <circle-progress
+                  [percent]="85"
+                  [radius]="65"
+                  [outerStrokeWidth]="8"
+                  [innerStrokeWidth]="8"
+                  [outerStrokeColor]="'#46ABB4'"
+                  [innerStrokeColor]="'#FFFFFF'"
+                  [animation]="true"
+                  [animationDuration]="300"
+                  class="text_white"
+                ></circle-progress>
+                <div class="skill_name">Communication</div>
+              </li>
+              <li>
+                <circle-progress
+                  [percent]="90"
+                  [radius]="65"
+                  [outerStrokeWidth]="8"
+                  [innerStrokeWidth]="8"
+                  [outerStrokeColor]="'#46ABB4'"
+                  [innerStrokeColor]="'#FFFFFF'"
+                  [animation]="true"
+                  [animationDuration]="300"
+                  class="text_white"
+                ></circle-progress>
+                <div class="skill_name">Team Work</div>
+              </li>
+              <li>
+                <circle-progress
+                  [percent]="65"
+                  [radius]="65"
+                  [outerStrokeWidth]="8"
+                  [innerStrokeWidth]="8"
+                  [outerStrokeColor]="'#46ABB4'"
+                  [innerStrokeColor]="'#FFFFFF'"
+                  [animation]="true"
+                  [animationDuration]="300"
+                  class="text_white"
+                ></circle-progress>
+                <div class="skill_name">Project Management</div>
+              </li>
+              <li>
+                <circle-progress
+                  [percent]="85"
+                  [radius]="65"
+                  [outerStrokeWidth]="8"
+                  [innerStrokeWidth]="8"
+                  [outerStrokeColor]="'#46ABB4'"
+                  [innerStrokeColor]="'#FFFFFF'"
+                  [animation]="true"
+                  [animationDuration]="300"
+                  class="text_white"
+                ></circle-progress>
+                <div class="skill_name">Creativity</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!------------TimeLine section starts------------->
+
+  <div class="timeline_section" id="experiences">
+    <div class="top_section text-center">
+      <h1>Work Experience and Education</h1>
+      <p>Let me share my Education and Work Experience with you</p>
+    </div>
+
+    <ul class="timeline">
+      <!-- Item 1 -->
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="flag">UOG</span>
+            <span class="time-wrapper"
+              ><span class="time">2022 - present</span></span
+            >
+          </div>
+          <div class="desc">BS in Computer Sciences</div>
+        </div>
+      </li>
+
+      <!-- Item 2 -->
+      <li>
+        <div class="direction-l">
+          <div class="flag-wrapper">
+            <span class="flag">Front End Developer</span>
+            <span class="time-wrapper"
+              ><span class="time">2020-2021</span></span
+            >
+          </div>
+          <div class="desc">
+            I've worked with <b>Magna Food Services</b>, a UK based company, as
+            a Frontend developer and have designed Landing page, CMS and Admin
+            panel for them in both ReactJS and Angular 11.
+          </div>
+        </div>
+      </li>
+
+      <!-- Item 3 -->
+      <li>
+        <div class="direction-r">
+          <div class="flag-wrapper">
+            <span class="flag">Freelancer</span>
+            <span class="time-wrapper"
+              ><span class="time">2022 - present</span></span
+            >
+          </div>
+          <div class="desc">
+            As a Freelancer, I've designed CMS and Static sites for many
+            companies and locals in both Core and Wordpress
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!------------Portfolio section starts------------->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="header">
+        <h1 class="logo">ProjectGallery</h1>
+      </div>
+      <div class="gallery1">
+        <div class="item">
+          <a href="https://golddrycleanersuk.sajdaj.com" target="_blank">
+            <img src="assets/images/portfolio/gold-laundry.png" alt="image" />
+            <h4>Gold-Laundry (React JS)</h4>
+          </a>
+        </div>
+        <div class="item">
+          <a href="https://mebymaidaeman.vercel.app/" target="_blank">
+            <img src="assets/images/portfolio/fashion_home.png" alt="image" />
+            <h4>Fashion Portfolio (React JS)</h4>
+          </a>
+        </div>
+        <div class="item">
+          <a href="https://www.keyhour.com/">
+            <img src="assets/images/portfolio/keyhour_home.png" alt="image" />
+            <h4>Online Tuition (Wordpress)</h4>
+          </a>
+        </div>
+        <div class="item">
+          <a href="https://vroom-pk.netlify.app/" target="_blank">
+            <img src="assets/images/portfolio/carservices.jpg" alt="image" />
+            <h4>VRoom - Car service (Core Frontend)</h4>
+          </a>
+        </div>
+        <!-- <div class="item">
+          <a href="https://freezyfoodservices.vercel.app/" target="_blank">
+            <img src="assets/images/portfolio/foodservices.png" alt="image" />
+            <h4>Food Services (React JS)</h4>
+          </a>
+        </div> -->
+        <div class="item">
+          <a href="https://dev-al-isra-interiors.pantheonsite.io/">
+            <img src="assets/images/portfolio/Interior_home.jpg" alt="image" />
+            <h4>Interior Designing (Wordpress)</h4>
+          </a>
+        </div>
+        <div class="item">
+          <a href="https://dev-demowpstore.pantheonsite.io/">
+            <img src="assets/images/portfolio/store_home.jpg" alt="image" />
+            <h4>E-Commerce Store (Wordpress)</h4>
+          </a>
+        </div>
+        <div class="item">
+          <a href="https://resturant-site.netlify.app/" target="_blank">
+            <img src="assets/images/portfolio/restaurant.png" alt="image" />
+            <h4>Restaurant (Core Frontend)</h4>
+          </a>
+        </div>
+        <div class="item">
+          <a href="https://bookmearoom.vercel.app/" target="_blank">
+            <img
+              src="assets/images/portfolio/reservation_home.jpg"
+              alt="image"
+            />
+            <h4>Reservation (MERN Stack)</h4>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!------------------Contact Us----------------------->
+
+  <section
+    class="contact_section"
+    id="contact"
+    data-aos="zoom-in-up"
+    data-aos-duration="2000"
+  >
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form [formGroup]="contactform" class="form-group">
+        <div class="row">
+          <div class="col">
+            <div class="inputBox uname">
+              <input type="text" name="" formControlName="name" />
+              <span class="text">Name</span>
+              <span class="line"></span>
+            </div>
+            <small
+              *ngIf="
+                contactform.get('name').invalid &&
+                contactform.get('name').touched
+              "
+              class="submit_message"
+              >Name is required</small
+            >
+          </div>
+          <div class="col">
+            <div class="inputBox uemail">
+              <input type="email" name="" formControlName="email" />
+              <span class="text">Email</span>
+              <span class="line"></span>
+            </div>
+            <small
+              *ngIf="
+                contactform.get('email').invalid &&
+                contactform.get('email').touched
+              "
+              class="submit_message"
+              >Email is required</small
+            >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="inputBox textarea">
+              <textarea formControlName="message"></textarea>
+              <span class="text">Type your message here.....</span>
+              <span class="line"></span>
+            </div>
+            <small
+              *ngIf="
+                contactform.get('message').invalid &&
+                contactform.get('message').touched
+              "
+              class="submit_message"
+              >Message is required</small
+            >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <input
+              type="reset"
+              value="send"
+              class="submit"
+              [disabled]="contactform.invalid"
+              (click)="submitData(contactform.value)"
+            />
+          </div>
+        </div>
+        <p *ngIf="isSubmit" class="submit_message">{{ submitMessage }}</p>
+      </form>
+    </div>
+  </section>
+
+  <!--------------------Footer-------------------->
+
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <hr />
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <p class="copyright-text">
+            All Projects Displayed are created by myself for clients and self
+            learning purpose. If any design resembles to a real world site, I
+            have created it from scratch for learning purpose.
+            <span>Arooj Saghar | Front End Developer</span>.
+          </p>
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <ul class="social-icons">
+            <!-- <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li> -->
+            <li>
+              <a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a class="github" href="#"><i class="fa fa-github"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
