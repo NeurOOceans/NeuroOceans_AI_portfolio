@@ -1,6 +1,5 @@
 import { Component, ElementRef, HostListener } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
 import { AppService } from './app.service';
 import * as $ from 'jquery';
 import { NgwWowService } from 'ngx-wow';
@@ -18,9 +17,8 @@ export class AppComponent {
   contactform : FormGroup;
   isSubmit = true;
   submitMessage = '';
-  private myForm : AngularFirestoreCollection<any>
 
-  constructor(private wowService: NgwWowService, private formBuilder: FormBuilder, private firestore: AngularFirestore) {
+  constructor(private wowService: NgwWowService, private formBuilder: FormBuilder) {
     this.wowService.init();
   }
 
@@ -43,46 +41,28 @@ export class AppComponent {
       var $ = require('jquery');
       var mixItUp = require('mixitup');
       var $container = $('.galleryContainer');
-      $container.isotope({
-        filter: '*',
-        animationOptions: {
-          queue: true
-        }
-      });
+      // $container.isotope({
+      //   filter: '*',
+      //   animationOptions: {
+      //     queue: true
+      //   }
+      // });
       $('.gallery_nav li').click(() => {
         $('.gallery_nav .current').removeClass('current');
         $(this).addClass('current');
         var selector = $(this).attr('data-filter');
-        $container.isotope({
-          filter: selector,
-          animationOptions: {
-            queue: true
-          }
-        });
+        // $container.isotope({
+        //   filter: selector,
+        //   animationOptions: {
+        //     queue: true
+        //   }
+        // });
         return false
       });
-      $('#portfolio').mixItUp();
+      // $('#portfolio').mixItUp();
     });
-
-    this.myForm = this.firestore.collection('enquiry')
-    this.contactform = this.formBuilder.group({
-      name : [null, Validators.required],
-      email : [null, Validators.required, Validators.email],
-      message : [null, Validators.required]
-    })
   }
 
-  submitData(value:any) {
-      this.myForm.add(value).then(res => {
-        this.isSubmit = true;
-        this.submitMessage = 'Message Sent Successfully'
-      }).catch(err=>{
-        console.log(err);
-      })
-      setTimeout(() => {
-        this.isSubmit = false
-      }, 5000);
-  }
 
   togglemenu() {
     $(".sidemenu").addClass("active");

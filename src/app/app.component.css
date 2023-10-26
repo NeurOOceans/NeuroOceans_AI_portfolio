@@ -93,6 +93,7 @@ ul {
   top: 0;
   right: 0;
   background-color: var(--background);
+  box-shadow: 0px 0px 20px 3px #0505057e;
   width: 40%;
   height: 100vh;
   z-index: 999;
@@ -122,7 +123,7 @@ ul {
   left: 13px;
   height: 28px;
   width: 2px;
-  background: var(--Third);
+  background: aqua;
 }
 .header .sidemenu .close::before {
   transform: rotate(45deg);
@@ -268,6 +269,10 @@ ul {
 .email .fa {
   padding-right: 10px;
   color: var(--Second);
+}
+img.upwork {
+  width: 30px;
+  height: 30px;
 }
 .social-icons li {
   list-style: none;
@@ -441,7 +446,7 @@ ul {
 }
 .about img {
   width: 500px;
-  height: 500px;
+  height: 420px;
 }
 .gap {
   margin-left: 75px;
@@ -452,9 +457,6 @@ ul {
 }
 .about .gap p {
   padding-bottom: 50px;
-}
-.tag ul {
-  padding-bottom: 30px;
 }
 .tag ul li {
   margin: 0px 6px;
@@ -570,8 +572,12 @@ ul {
 .services h3 {
   font-family: var(--font-family-monospace);
   margin-bottom: 18px;
-  font-size: 25px;
+  font-size: 22px;
   line-height: 34px;
+}
+
+.small_text.services h3{
+   font-size: 22px;
 }
 
 @media (max-width: 767px) {
@@ -1585,8 +1591,13 @@ ul {
 .site-footer .social-icons a.linkedin:hover {
   background-color: #007bb6;
 }
-.site-footer .social-icons a.instagram:hover {
-  background-color: #ea4c89;
+.site-footer .social-icons a.footer_upwork:hover {
+  background-color: #14A800;
+  outline: 1px solid white;
+}
+.footer_upwork img{
+  width: 20px !important;
+  height: 20px !important;
 }
 
 /**********************/
